@@ -141,8 +141,8 @@ export default function App() {
             <a href="#problema" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">O Problema</a>
             <a href="#servicos" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">Serviços</a>
             <a href="#caso" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">Caso Real</a>
+            <a href="#entregas" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">Entregas</a>
             <a href="#combos" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">Combos</a>
-            <a href="#projecao" className="font-body text-[13px] text-cinza hover:text-roxo transition-colors tracking-wide">Projeção</a>
             <a href="#contato" className="font-body text-[13px] bg-roxo text-white px-5 py-2 rounded-full hover:bg-roxo-dark transition-colors tracking-wide">Agendar Conversa</a>
           </div>
         </div>
@@ -289,9 +289,147 @@ export default function App() {
 
       <Divider />
 
+      {/* ENTREGAS — SHOWCASE */}
+      <section id="entregas" className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
+        <SectionLabel number="04" text="Entregas" />
+        <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-4 max-w-[700px]">
+          Veja o que entregamos — de verdade
+        </h2>
+        <p className="reveal font-body text-lg text-cinza leading-relaxed max-w-[700px] mb-12">
+          Estes são exemplos reais produzidos para o caso do ortopedista. Identidade visual, site, landing page, posts e criativos — tudo pronto para uso.
+        </p>
+
+        {/* Site Institucional */}
+        <div className="reveal mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-roxo/10 flex items-center justify-center">
+              <span className="text-xl">{'\uD83C\uDF10'}</span>
+            </div>
+            <div>
+              <h3 className="font-display text-xl text-midnight">Site Institucional</h3>
+              <p className="font-body text-[13px] text-cinza">8 páginas, mobile-first, SEO, Schema MedicalClinic</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-cinza-light/40 overflow-hidden bg-white">
+            <iframe
+              src="https://oguidomingos.github.io/site-clinica-modelo/"
+              className="w-full h-[500px] md:h-[600px] border-0"
+              title="Site Institucional — Clínica Modelo"
+              loading="lazy"
+            />
+            <div className="px-6 py-4 border-t border-cinza-light/30 flex items-center justify-between">
+              <span className="font-body text-[12px] text-cinza">Site completo com serviços, depoimentos, FAQ e agendamento</span>
+              <a href="https://oguidomingos.github.io/site-clinica-modelo/" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors">Abrir em nova aba {'\u2197'}</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Landing Page */}
+        <div className="reveal mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-roxo/10 flex items-center justify-center">
+              <span className="text-xl">{'\u26A1'}</span>
+            </div>
+            <div>
+              <h3 className="font-display text-xl text-midnight">Landing Page de Conversão</h3>
+              <p className="font-body text-[13px] text-cinza">Alta conversão para procedimento específico (Infiltração)</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-cinza-light/40 overflow-hidden bg-white">
+            <iframe
+              src="https://oguidomingos.github.io/lp-clinica-modelo/"
+              className="w-full h-[500px] md:h-[600px] border-0"
+              title="Landing Page — Infiltração"
+              loading="lazy"
+            />
+            <div className="px-6 py-4 border-t border-cinza-light/30 flex items-center justify-between">
+              <span className="font-body text-[12px] text-cinza">LP focada em conversão: headline magnética, benefícios, social proof, CTA</span>
+              <a href="https://oguidomingos.github.io/lp-clinica-modelo/" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors">Abrir em nova aba {'\u2197'}</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Identidade Visual */}
+        <div className="reveal mb-12">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-roxo/10 flex items-center justify-center">
+              <span className="text-xl">{'\uD83C\uDFA8'}</span>
+            </div>
+            <div>
+              <h3 className="font-display text-xl text-midnight">Identidade Visual</h3>
+              <p className="font-body text-[13px] text-cinza">Logo, paleta, tipografia, mockups profissionais</p>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-cinza-light/40 overflow-hidden bg-white">
+            <iframe
+              src="https://oguidomingos.github.io/pulso-clinica-brand/"
+              className="w-full h-[500px] md:h-[600px] border-0"
+              title="Identidade Visual — Clínica Modelo"
+              loading="lazy"
+            />
+            <div className="px-6 py-4 border-t border-cinza-light/30 flex items-center justify-between">
+              <span className="font-body text-[12px] text-cinza">Manual de identidade visual com logo, cores, tipografia e mockups</span>
+              <a href="https://oguidomingos.github.io/pulso-clinica-brand/" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors">Abrir em nova aba {'\u2197'}</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Posts + Criativos */}
+        <div className="reveal grid md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-2xl p-8 border border-cinza-light/40">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-2xl">{'\uD83D\uDCF7'}</span>
+              <h3 className="font-display text-xl text-midnight">Posts Instagram</h3>
+            </div>
+            <p className="font-body text-[14px] text-cinza mb-4">24 posts profissionais produzidos: carrosséis educativos, provas sociais, dicas e institucionais.</p>
+            <ul className="space-y-2 mb-6">
+              {['8 carrosséis educativos (5 cards cada)', '8 posts de dicas e prevenção', '4 posts de prova social', '4 posts institucionais'].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-[13px] text-preto/70">
+                  <span className="text-roxo">{'\u2713'}</span><span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="https://drive.google.com/drive/folders/1BqqFi6I7oNTTBvLdoF9t1d-mao9faS_L" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors inline-flex items-center gap-1">
+              Ver 24 posts no Drive {'\u2197'}
+            </a>
+          </div>
+          <div className="bg-white rounded-2xl p-8 border border-cinza-light/40">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-2xl">{'\uD83D\uDE80'}</span>
+              <h3 className="font-display text-xl text-midnight">Criativos Meta Ads</h3>
+            </div>
+            <p className="font-body text-[14px] text-cinza mb-4">6 criativos prontos para campanhas no Facebook e Instagram: feed (1:1) e stories (9:16).</p>
+            <ul className="space-y-2 mb-6">
+              {['Dor no joelho — feed + stories', 'Infiltração articular — feed + stories', 'Institucional clínica — feed + stories'].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-[13px] text-preto/70">
+                  <span className="text-roxo">{'\u2713'}</span><span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <a href="https://drive.google.com/drive/folders/18l-6UX_61HO22kx5bLEi3dUIjpqc3xPP" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors inline-flex items-center gap-1">
+              Ver 6 criativos no Drive {'\u2197'}
+            </a>
+          </div>
+        </div>
+
+        {/* Planejamento */}
+        <div className="reveal mt-6 bg-white rounded-2xl p-8 border border-cinza-light/40">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="text-2xl">{'\uD83D\uDCCB'}</span>
+            <h3 className="font-display text-xl text-midnight">Planejamento Estratégico</h3>
+          </div>
+          <p className="font-body text-[14px] text-cinza mb-4">Documento completo com copy de 8 posts, calendário editorial, tom de voz e diretrizes de conteúdo para Instagram.</p>
+          <a href="https://docs.google.com/document/d/1U5afJ8JEqe6b4S_lh8TQmjQr9FBY1jb5/edit" target="_blank" rel="noopener noreferrer" className="font-body text-[13px] text-roxo hover:text-roxo-dark transition-colors inline-flex items-center gap-1">
+            Ver documento de planejamento {'\u2197'}
+          </a>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* PROJEÇÃO */}
       <section id="projecao" className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="04" text="Projeção" />
+        <SectionLabel number="05" text="Projeção" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-4 max-w-[700px]">
           De invisível a referência em 6 meses
         </h2>
@@ -321,7 +459,7 @@ export default function App() {
 
       {/* COMBOS */}
       <section id="combos" className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="05" text="Combos" />
+        <SectionLabel number="06" text="Combos" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-4 max-w-[700px]">
           Escolha o modelo ideal para a clínica
         </h2>
@@ -342,7 +480,7 @@ export default function App() {
 
       {/* PACOTES */}
       <section className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="06" text="Pacotes Completos" />
+        <SectionLabel number="07" text="Pacotes Completos" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-4 max-w-[700px]">
           Recorrência mensal — resultados contínuos
         </h2>
@@ -394,7 +532,7 @@ export default function App() {
 
       {/* COMO FUNCIONA */}
       <section className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="07" text="Processo" />
+        <SectionLabel number="08" text="Processo" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-12 max-w-[700px]">
           Do diagnóstico aos resultados em 5 etapas
         </h2>
@@ -421,7 +559,7 @@ export default function App() {
 
       {/* DIFERENCIAIS */}
       <section className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="08" text="Diferenciais" />
+        <SectionLabel number="09" text="Diferenciais" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-12 max-w-[700px]">
           Por que Pulso — e não qualquer agência
         </h2>
@@ -445,7 +583,7 @@ export default function App() {
 
       {/* KPIs */}
       <section className="max-w-[1200px] mx-auto px-6 md:px-12 py-20">
-        <SectionLabel number="09" text="Métricas" />
+        <SectionLabel number="10" text="Métricas" />
         <h2 className="reveal font-display text-3xl md:text-4xl text-midnight mb-4 max-w-[700px]">
           O que medimos — e entregamos
         </h2>
